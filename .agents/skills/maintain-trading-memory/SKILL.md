@@ -33,6 +33,7 @@ Use these exact category names for `memory/concepts.md`:
 - `策略范式与因子`: strategy families, factors, valuation frameworks, arbitrage logic, signal types.
 - `风险与资金管理`: position sizing, drawdown, margin of safety, stop loss, asymmetric payoff, survival.
 - `数据与验证工程`: data quality, cleaning, backtests, sample split, out-of-sample validation, cost modeling, strategy decay.
+- `市场制度与交易机制`: exchange rules, settlement rules, price limits, taxes, fees, liquidity constraints, order execution mechanisms.
 - `市场认知与交易哲学`: market behavior, participant psychology, reflexivity, fallibility, feedback loops, regime assumptions.
 - `AI 辅助研究`: AI-assisted reading, coding, data processing, feature discovery, sentiment analysis, research automation.
 
