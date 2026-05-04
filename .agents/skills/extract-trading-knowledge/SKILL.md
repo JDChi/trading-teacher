@@ -14,9 +14,23 @@ Turn user-provided trading materials into reusable learning assets without losin
 1. Identify source type, market, topic, author/date if available, and whether current data may be stale.
 2. Provide a short summary before detailed extraction.
 3. Extract concepts, terms, frameworks, assumptions, examples, and claims.
-4. Separate source claims from your interpretation.
-5. Convert useful ideas into review questions or concept cards.
-6. Save or suggest saving outputs under `knowledge/extracted/` when the user wants persistence.
+4. Classify extracted concepts using the concept category taxonomy below.
+5. Separate source claims from your interpretation.
+6. Convert useful ideas into review questions or concept cards.
+7. Save or suggest saving outputs under `knowledge/extracted/` when the user wants persistence.
+
+## Concept Category Taxonomy
+
+When extracting trading concepts, assign each reusable concept to the smallest useful category:
+
+- `数学与概率基础`: expectation, probability, simulation, statistical laws, win rate, odds, distributions.
+- `策略范式与因子`: strategy families, factors, valuation frameworks, arbitrage logic, signal types.
+- `风险与资金管理`: position sizing, drawdown, margin of safety, stop loss, asymmetric payoff, survival.
+- `数据与验证工程`: data quality, cleaning, backtests, sample split, out-of-sample validation, cost modeling, strategy decay.
+- `市场认知与交易哲学`: market behavior, participant psychology, reflexivity, fallibility, feedback loops, regime assumptions.
+- `AI 辅助研究`: AI-assisted reading, coding, data processing, feature discovery, sentiment analysis, research automation.
+
+If a concept could fit multiple categories, choose the category that best matches how the course material uses it, and mention the secondary category in notes only if it affects understanding.
 
 ## Extraction Format
 
@@ -24,6 +38,7 @@ Use this structure for a normal material digest:
 
 - `资料摘要`: 3-6 bullets on what the material says.
 - `核心概念`: Concepts and definitions.
+- `概念分类`: Map reusable concepts to the taxonomy categories.
 - `交易框架`: Any process, checklist, setup, or decision model.
 - `关键假设`: What must be true for the material's argument to work.
 - `风险与盲点`: Missing data, survivorship bias, overfitting, liquidity, costs, regime changes, or narrative risk.
@@ -44,4 +59,3 @@ When creating extracted notes, prefer:
 `knowledge/extracted/YYYY-MM-DD-topic.md`
 
 Use concise English or pinyin slugs unless the user requests Chinese filenames.
-

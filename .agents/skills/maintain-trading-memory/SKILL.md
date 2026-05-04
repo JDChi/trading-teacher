@@ -23,6 +23,20 @@ Keep the user's long-term trading learning context accurate, useful, and separat
 - Mark uncertain inferences as `待验证`, not as facts.
 - Prefer concise updates over long transcripts.
 - When a memory update would materially affect future coaching, tell the user what will be remembered.
+- For `memory/concepts.md`, preserve the `Category` column and assign each concept to the concept category taxonomy below.
+
+## Concept Category Taxonomy
+
+Use these exact category names for `memory/concepts.md`:
+
+- `数学与概率基础`: expectation, probability, simulation, statistical laws, win rate, odds, distributions.
+- `策略范式与因子`: strategy families, factors, valuation frameworks, arbitrage logic, signal types.
+- `风险与资金管理`: position sizing, drawdown, margin of safety, stop loss, asymmetric payoff, survival.
+- `数据与验证工程`: data quality, cleaning, backtests, sample split, out-of-sample validation, cost modeling, strategy decay.
+- `市场认知与交易哲学`: market behavior, participant psychology, reflexivity, fallibility, feedback loops, regime assumptions.
+- `AI 辅助研究`: AI-assisted reading, coding, data processing, feature discovery, sentiment analysis, research automation.
+
+If a concept spans multiple categories, choose the primary learning use case as `Category` and mention secondary context in `Notes` only when useful.
 
 ## Update Workflow
 
@@ -30,7 +44,7 @@ Keep the user's long-term trading learning context accurate, useful, and separat
 2. Choose the correct destination file.
 3. Write the memory as a dated bullet or table row.
 4. Include source context when useful: conversation, material title, or journal date.
-5. If updating a concept, include mastery status: `初识`, `理解中`, `可应用`, or `需复习`.
+5. If updating a concept, include category and mastery status: `初识`, `理解中`, `可应用`, or `需复习`.
 
 ## Suggested Formats
 
@@ -40,7 +54,7 @@ For `memory/profile.md`:
 
 For `memory/concepts.md`:
 
-`| Concept | Status | Notes | Review Cue | Updated |`
+`| Concept | Category | Status | Notes | Review Cue | Updated |`
 
 For `memory/principles.md`:
 
@@ -49,4 +63,3 @@ For `memory/principles.md`:
 For `journals/`:
 
 Use `templates/trade-journal.md` unless the user provides another format.
-
